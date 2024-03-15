@@ -395,8 +395,48 @@ font-weight: 600;
    font-size: 3rem;
    font-weight: 600;
    align-self: center;
- 
+
  }
+ .offering__policy h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #dc8928;
+  line-height: 1;
+ }
+
+.offer__price h4{
+  color: var(--primary);
+  font-size: large;
+}
+ .offer__price h3{
+justify-content: center;
+ }
+ .offer__price h3{
+  color: #dc8928;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.offer .offer__price div:nth-child(1) {
+  font-size: 3.9rem;
+  font-weight: bold;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.offer .offer__price {
+ display: flex;
+    align-items: center;
+    line-height: 1;
+}
+.offer .offer__price div:nth-child(2) {
+  line-height: 0.7;
+  font-size: 16rem;
+  
+  align-self: flex-start;
+  font-weight: bold;
+}
+
  .offer_text p{
   font-size: 1.5rem;
    font-weight: 600;
@@ -409,10 +449,66 @@ font-weight: 600;
    transform: translateX(1rem);
    transition:.5s ease
  }
- .offer__text h3{
+ /* .offer__text h3{
+  
+ } */
+
+
+ /* HOW */
+ .how{
+  background:var(--primary);
   
  }
+ .how__wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  min-height: 500px
+  ;
+ }
+ .how__ate{
+  background-image:url("img/different_img.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+ }
+   .how__text{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 75rem;
+    margin:0 auto;
+   }
+   .how__text h2{
+    color:var(--light);
+    font-size: 4rem;
+    font-weight: 600;
+   }
+   .how__text p{
+    color:var(--light)
+   }
 
+
+   @media only screen and (max-width: 600px) {
+    .how__ate{
+display: none;
+    }
+    .how__wrapper{
+      grid-template-columns: none;
+    }
+    .how__text h2{
+      font-size:3rem;
+      text-align:center;
+    }
+    .how__text p{
+      font-size: 1.5rem;
+      text-align:justify;
+    }
+   
+   
+    }
+  
 /* REPEATABLE PATTERNS */
 :root{
     --light:#ffffff;
@@ -426,6 +522,7 @@ font-weight: 600;
   border:1px solid transparent;
   transition: .5s ease;
   text-align: center;
+ 
 }
 .btn:hover{
   scale:1.1;
@@ -443,3 +540,4 @@ font-weight: 600;
   font-size: 1.5rem;
   font-weight:600;
 }
+
