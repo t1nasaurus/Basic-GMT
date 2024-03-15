@@ -505,10 +505,36 @@ display: none;
       font-size: 1.5rem;
       text-align:justify;
     }
+}
+
+/* RECO SECTION */
+
+ .recommend__wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 400px;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.recommended__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.recommended__text h2 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 4rem;
+  max-width: 45rem;
+  margin: 0;
+  text-align: center;
+}
+
    
-   
-    }
-  
 /* REPEATABLE PATTERNS */
 :root{
     --light:#ffffff;
@@ -539,5 +565,11 @@ display: none;
   color: var(--primary);
   font-size: 1.5rem;
   font-weight:600;
+}
+
+.btn--light--blue {
+  border: 2px solid #134a8c;
+  background-color: #fff;
+  color: #134a8c;
 }
 
